@@ -3,35 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Technology Background</title>
+    <title>Designed & More Details</title>
     <style>
-        /* General Styles */
-        body, h1, h2, p, a {
+        body {
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            font-family: 'Roboto', sans-serif;
-        }
-
-        body {
-            background-color: #f4f4f9;
+            background: url('https://source.unsplash.com/1600x900/?abstract,technology') no-repeat center center fixed;
+            background-size: cover;
             color: #333;
         }
 
         header, footer {
-            background-color: #333;
+            background: rgba(0, 0, 0, 0.8);
             color: white;
-            padding: 1rem;
             text-align: center;
+            padding: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-
-            header h1, footer p {
-                margin: 0;
-            }
 
         nav ul {
             display: flex;
             justify-content: center;
             list-style: none;
+            margin: 0;
+            padding: 0;
         }
 
             nav ul li {
@@ -41,63 +37,55 @@
                 nav ul li a {
                     color: white;
                     text-decoration: none;
-                    font-weight: 500;
+                    font-weight: bold;
+                    transition: color 0.3s ease;
                 }
 
                     nav ul li a:hover {
-                        text-decoration: underline;
+                        color: #ff7f50;
                     }
 
-        /* Hero Section */
-        .hero {
-            background-image: url('https://source.unsplash.com/1600x900/?technology,web'); /* Replace with your image path */
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            padding: 100px 20px;
+        section {
+            padding: 50px;
+            max-width: 1200px;
+            margin: auto;
             text-align: center;
-            color: white;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         }
 
-            .hero h2 {
-                font-size: 2.5rem;
-                margin-bottom: 20px;
-                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-            }
-
-        .cta-button {
-            background-color: white;
-            color: #ff7f50;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: 500;
+        .project {
+            border: 1px solid #ddd;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-            .cta-button:hover {
-                background-color: #ff6347;
-                color: white;
+            .project:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
             }
 
-        /* Content Section */
-        .content-section {
-            padding: 50px 20px;
-            text-align: center;
-        }
-
-            .content-section h2 {
-                margin-bottom: 20px;
-                font-size: 2rem;
+            .project h3 {
+                margin-top: 0;
             }
 
-            .content-section p {
-                font-size: 1rem;
+            .project img {
+                max-width: 100%;
+                border-radius: 12px;
+                margin-bottom: 15px;
+            }
+
+            .project p {
+                margin: 10px 0;
                 line-height: 1.6;
-                max-width: 800px;
-                margin: 0 auto;
+                font-size: 1rem;
             }
 
-        /* Footer */
         footer p {
             font-size: 0.9rem;
         }
@@ -105,7 +93,7 @@
 </head>
 <body>
     <header>
-        <h1>Your Company</h1>
+        <h1>Designed & More Details</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -117,14 +105,28 @@
         </nav>
     </header>
 
-    <section class="hero">
-        <h2>Welcome to the Future of Technology</h2>
-        <a href="services.html" class="cta-button">Explore Our Services</a>
-    </section>
+    <section>
+        <h2>Our Design Philosophy</h2>
+        <p>We believe in creating designs that are not only visually appealing but also functional and user-friendly. Our team focuses on delivering tailored solutions that align with our clients' goals and brand identity.</p>
 
-    <section class="content-section">
-        <h2>Why Choose Us?</h2>
-        <p>We provide innovative technology solutions to enhance your business's success. Let us help you navigate the digital landscape with confidence.</p>
+        <h2>Project Highlights</h2>
+        <div class="project">
+            <img src="https://source.unsplash.com/800x400/?ecommerce,website" alt="E-commerce Website Redesign">
+            <h3>E-commerce Website Redesign</h3>
+            <p>This project involved a complete overhaul of an online store, enhancing the user interface and adding seamless payment integration.</p>
+        </div>
+
+        <div class="project">
+            <img src="https://source.unsplash.com/800x400/?photography,portfolio" alt="Photographer's Portfolio">
+            <h3>Photographer's Portfolio</h3>
+            <p>We worked closely with a photographer to create a modern, elegant portfolio that showcases their work with high-resolution galleries.</p>
+        </div>
+
+        <div class="project">
+            <img src="https://source.unsplash.com/800x400/?corporate,technology" alt="Corporate Website for IT Consultancy">
+            <h3>Corporate Website for IT Consultancy</h3>
+            <p>Designed a sleek, professional website that highlights the consultancy's expertise and client success stories.</p>
+        </div>
     </section>
 
     <footer>
